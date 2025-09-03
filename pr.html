@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e3a4663973.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Kembali ke Menu</a>
+        <header>
+            <h1>📝 PR Tracker</h1>
+            <p>Jangan sampai ada PR yang terlewat!</p>
+        </header>
+
+        <main>
+            <form id="form-pr">
+                <h2>Tambah PR Baru</h2>
+                <div class="form-group">
+                    <input type="text" id="mapel-input" placeholder="Mata Pelajaran" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="tugas-input" rows="3" placeholder="Deskripsi tugas..." required></textarea>
+                </div>
+                <div class="form-group-inline">
+                    <div class="form-group">
+                        <label for="tenggat-input">Tenggat Waktu</label>
+                        <input type="date" id="tenggat-input" required>
+                    </div>
+                    <button type="submit" class="btn-tambah">Tambah PR</button>
+                </div>
+            </form>
+
+            <div class="list-wrapper">
+                <h3>Daftar PR Kamu</h3>
+                <ul id="list-pr" class="item-list"></ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

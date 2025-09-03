@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e3a4663973.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Kembali ke Menu</a>
+        <header>
+            <h1>📚 Book Tracker</h1>
+            <p>Catat buku yang sedang dikumpulkan guru.</p>
+        </header>
+
+        <section class="book-tracker-container">
+            <form id="form-buku">
+                <h2>Tambah Buku Terkumpul</h2>
+                <div class="form-group-inline">
+                    <div class="form-group">
+                        <input type="text" id="mapel-buku-input" placeholder="Mata Pelajaran" required>
+                    </div>
+                     <div class="form-group">
+                        <input type="text" id="nama-buku-input" placeholder="Nama Buku" required>
+                    </div>
+                    <button type="submit" class="btn-tambah btn-buku">Tambah Buku</button>
+                </div>
+            </form>
+            
+            <div class="list-wrapper">
+                <h3>Buku yang Sedang Dikumpul</h3>
+                 <ul id="list-buku" class="item-list"></ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
